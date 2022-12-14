@@ -4,7 +4,7 @@
 <head>
     <style>
         h1 {
-            color: red;
+            color: green;
         }
     </style>
 </head>
@@ -21,7 +21,7 @@
             
             ?>
         </h2>
-
+        
         <h1>THIS is onther</h1>
         <br><br>
 
