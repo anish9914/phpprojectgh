@@ -1,4 +1,4 @@
-<?php
+<?php 
     $error = "";
 
     $successMessage = "";
@@ -26,15 +26,14 @@
             $error = '<div class="alert alert-danger" role="alert"><p>There were error(s) in your form:</p>' . $error . '</div>';
         }
         else {  //email address is good!
-           
-            $emailTo =  "To: " . $_POST['emailto'];
+            $emailTo = "anishpapu7663@gmail.com";
             $subject = $_POST['subject'];
             $content = $_POST['content'];
             $headers = "From: " . $_POST['email'];
 
             //try sending the mail
             if(mail($emailTo, $subject, $content, $headers)) {
-                $successMessage = '<div class="alert alert-success" role="alert">Your message was sent, ' .
+                $successMessage = '<div class="alert alert-success" role="alert">Your message was sent, ' . 
                                 'we\'ll get back to you ASAP!</div>';
             }
             else {
@@ -54,10 +53,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-       
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-              rel="stylesheet"
-              integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+              rel="stylesheet" 
+              integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
               crossorigin="anonymous">
 
     </head>
@@ -68,19 +67,11 @@
 
             <form method="post">
                 <fieldset class="form-group">
-                    <label for="email">From Email address </label>
+                    <label for="email">Email address </label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
                     <small class="text-muted">We'll never share your e-mail with anyone else.</small>
                 </fieldset>
 
-             
-                <fieldset class="form-group">
-                    <label for="email"> Email address </label>
-                    <input type="email" class="form-control" id="email" name="emailto" placeholder="Enter email">
-                </fieldset>
-               
-               
-               
                 <fieldset class="form-group">
                     <label for="subject">Subject </label>
                     <input type="text" class="form-control" id="subject" name="subject">
@@ -96,8 +87,8 @@
         </div><!-- end of container div -->
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-                integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" 
+                integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" 
                 crossorigin="anonymous">
         </script>
 

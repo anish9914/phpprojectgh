@@ -27,7 +27,7 @@
         }
         else {  //email address is good!
            
-            $emailTo =  "To: " . $_POST['emailto'];
+            $emailTo =  ": " . $_POST['emailto'];
             $subject = $_POST['subject'];
             $content = $_POST['content'];
             $headers = "From: " . $_POST['email'];
