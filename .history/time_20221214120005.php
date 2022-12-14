@@ -9,7 +9,7 @@
 <body>
     <?php
    echo date('h:i:s A');
-   echo "hello";
+   echo""
     ?>
 </body>
 </html>
